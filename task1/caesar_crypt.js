@@ -28,14 +28,15 @@ try {
             
             
         });
-        console.log(outputText);
+        //console.log(outputText);
         return outputText;
     };
 
-    crypt("Pm ol ohk hufaopun jvumpkluaphs av zhf, ol dyval pa pu jpwoly, aoha pz, if zv johunpun aol vykly vm aol slaalyz vm aol hswohila, aoha uva h dvyk jvbsk il thkl vba.", 7, "decrypt")
+    //crypt("Pm ol ohk hufaopun jvumpkluaphs av zhf, ol dyval pa pu jpwoly, aoha pz, if zv johunpun aol vykly vm aol slaalyz vm aol hswohila, aoha uva h dvyk jvbsk il thkl vba.", 7, "decrypt")
 
 
 } catch(err) {
-    console.log(err.message);
+    //console.log(err.message);
 }
 
+module.exports.crypt = (text, shift, action) => crypt(text, shift, action);
